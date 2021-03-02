@@ -10,3 +10,5 @@ JOIN rental r ON inv.inventory_id = r.inventory_id
 WHERE t.customer_id = r.customer_id -- something with this first condition here
 	AND t.rating IN ('R', 'PG-13')
 	AND cat.name IN ('Horror', 'Sci-fi')
+
+-- JOIN is most expensive, we can reduce cost utilizing indexes
