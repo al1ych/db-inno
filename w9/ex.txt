@@ -1,0 +1,812 @@
+#Find all the documents in the collection restaurants
+> db.restaurants.find();
+
+{ _id: ObjectId("6062e26d3a154411fe41eb89"),
+  address: 
+   { building: '1007',
+     coord: [ -73.856077, 40.848447 ],
+     street: 'Morris Park Ave',
+     zipcode: '10462' },
+  borough: 'Bronx',
+  cuisine: 'Bakery',
+  grades: 
+   [ { date: 2014-03-03T00:00:00.000Z, grade: 'A', score: 2 },
+     { date: 2013-09-11T00:00:00.000Z, grade: 'A', score: 6 },
+     { date: 2013-01-24T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2011-11-23T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2011-03-10T00:00:00.000Z, grade: 'B', score: 14 } ],
+  name: 'Morris Park Bake Shop',
+  restaurant_id: '30075445' }
+{ _id: ObjectId("6062e26d3a154411fe41eb8a"),
+  address: 
+   { building: '469',
+     coord: [ -73.961704, 40.662942 ],
+     street: 'Flatbush Avenue',
+     zipcode: '11225' },
+  borough: 'Brooklyn',
+  cuisine: 'Hamburgers',
+  grades: 
+   [ { date: 2014-12-30T00:00:00.000Z, grade: 'A', score: 8 },
+     { date: 2014-07-01T00:00:00.000Z, grade: 'B', score: 23 },
+     { date: 2013-04-30T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2012-05-08T00:00:00.000Z, grade: 'A', score: 12 } ],
+  name: 'Wendy\'S',
+  restaurant_id: '30112340' }
+{ _id: ObjectId("6062e26d3a154411fe41eb8b"),
+  address: 
+   { building: '351',
+     coord: [ -73.98513559999999, 40.7676919 ],
+     street: 'West   57 Street',
+     zipcode: '10019' },
+  borough: 'Manhattan',
+  cuisine: 'Irish',
+  grades: 
+   [ { date: 2014-09-06T00:00:00.000Z, grade: 'A', score: 2 },
+     { date: 2013-07-22T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2012-07-31T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2011-12-29T00:00:00.000Z, grade: 'A', score: 12 } ],
+  name: 'Dj Reynolds Pub And Restaurant',
+  restaurant_id: '30191841' }
+{ _id: ObjectId("6062e26d3a154411fe41eb8c"),
+  address: 
+   { building: '2780',
+     coord: [ -73.98241999999999, 40.579505 ],
+     street: 'Stillwell Avenue',
+     zipcode: '11224' },
+  borough: 'Brooklyn',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-06-10T00:00:00.000Z, grade: 'A', score: 5 },
+     { date: 2013-06-05T00:00:00.000Z, grade: 'A', score: 7 },
+     { date: 2012-04-13T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2011-10-12T00:00:00.000Z, grade: 'A', score: 12 } ],
+  name: 'Riviera Caterer',
+  restaurant_id: '40356018' }
+{ _id: ObjectId("6062e26d3a154411fe41eb8d"),
+  address: 
+   { building: '97-22',
+     coord: [ -73.8601152, 40.7311739 ],
+     street: '63 Road',
+     zipcode: '11374' },
+  borough: 'Queens',
+  cuisine: 'Jewish/Kosher',
+  grades: 
+   [ { date: 2014-11-24T00:00:00.000Z, grade: 'Z', score: 20 },
+     { date: 2013-01-17T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2012-08-02T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2011-12-15T00:00:00.000Z, grade: 'B', score: 25 } ],
+  name: 'Tov Kosher Kitchen',
+  restaurant_id: '40356068' }
+{ _id: ObjectId("6062e26d3a154411fe41eb8e"),
+  address: 
+   { building: '8825',
+     coord: [ -73.8803827, 40.7643124 ],
+     street: 'Astoria Boulevard',
+     zipcode: '11369' },
+  borough: 'Queens',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-11-15T00:00:00.000Z, grade: 'Z', score: 38 },
+     { date: 2014-05-02T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2013-03-02T00:00:00.000Z, grade: 'A', score: 7 },
+     { date: 2012-02-10T00:00:00.000Z, grade: 'A', score: 13 } ],
+  name: 'Brunos On The Boulevard',
+  restaurant_id: '40356151' }
+{ _id: ObjectId("6062e26d3a154411fe41eb8f"),
+  address: 
+   { building: '2206',
+     coord: [ -74.1377286, 40.6119572 ],
+     street: 'Victory Boulevard',
+     zipcode: '10314' },
+  borough: 'Staten Island',
+  cuisine: 'Jewish/Kosher',
+  grades: 
+   [ { date: 2014-10-06T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2014-05-20T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2013-04-04T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2012-01-24T00:00:00.000Z, grade: 'A', score: 9 } ],
+  name: 'Kosher Island',
+  restaurant_id: '40356442' }
+{ _id: ObjectId("6062e26d3a154411fe41eb90"),
+  address: 
+   { building: '7114',
+     coord: [ -73.9068506, 40.6199034 ],
+     street: 'Avenue U',
+     zipcode: '11234' },
+  borough: 'Brooklyn',
+  cuisine: 'Delicatessen',
+  grades: 
+   [ { date: 2014-05-29T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2014-01-14T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2013-08-03T00:00:00.000Z, grade: 'A', score: 8 },
+     { date: 2012-07-18T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2012-03-09T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2011-10-14T00:00:00.000Z, grade: 'A', score: 9 } ],
+  name: 'Wilken\'S Fine Food',
+  restaurant_id: '40356483' }
+{ _id: ObjectId("6062e26d3a154411fe41eb91"),
+  address: 
+   { building: '6409',
+     coord: [ -74.00528899999999, 40.628886 ],
+     street: '11 Avenue',
+     zipcode: '11219' },
+  borough: 'Brooklyn',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-07-18T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2013-07-30T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2013-02-13T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2012-08-16T00:00:00.000Z, grade: 'A', score: 2 },
+     { date: 2011-08-17T00:00:00.000Z, grade: 'A', score: 11 } ],
+  name: 'Regina Caterers',
+  restaurant_id: '40356649' }
+{ _id: ObjectId("6062e26d3a154411fe41eb92"),
+  address: 
+   { building: '1839',
+     coord: [ -73.9482609, 40.6408271 ],
+     street: 'Nostrand Avenue',
+     zipcode: '11226' },
+  borough: 'Brooklyn',
+  cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+  grades: 
+   [ { date: 2014-07-14T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2013-07-10T00:00:00.000Z, grade: 'A', score: 8 },
+     { date: 2012-07-11T00:00:00.000Z, grade: 'A', score: 5 },
+     { date: 2012-02-23T00:00:00.000Z, grade: 'A', score: 8 } ],
+  name: 'Taste The Tropics Ice Cream',
+  restaurant_id: '40356731' }
+{ _id: ObjectId("6062e26d3a154411fe41eb93"),
+  address: 
+   { building: '2300',
+     coord: [ -73.8786113, 40.8502883 ],
+     street: 'Southern Boulevard',
+     zipcode: '10460' },
+  borough: 'Bronx',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-05-28T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2013-06-19T00:00:00.000Z, grade: 'A', score: 4 },
+     { date: 2012-06-15T00:00:00.000Z, grade: 'A', score: 3 } ],
+  name: 'Wild Asia',
+  restaurant_id: '40357217' }
+{ _id: ObjectId("6062e26d3a154411fe41eb94"),
+  address: 
+   { building: '7715',
+     coord: [ -73.9973325, 40.61174889999999 ],
+     street: '18 Avenue',
+     zipcode: '11214' },
+  borough: 'Brooklyn',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-04-16T00:00:00.000Z, grade: 'A', score: 5 },
+     { date: 2013-04-23T00:00:00.000Z, grade: 'A', score: 2 },
+     { date: 2012-04-24T00:00:00.000Z, grade: 'A', score: 5 },
+     { date: 2011-12-16T00:00:00.000Z, grade: 'A', score: 2 } ],
+  name: 'C & C Catering Service',
+  restaurant_id: '40357437' }
+{ _id: ObjectId("6062e26d3a154411fe41eb95"),
+  address: 
+   { building: '1269',
+     coord: [ -73.871194, 40.6730975 ],
+     street: 'Sutter Avenue',
+     zipcode: '11208' },
+  borough: 'Brooklyn',
+  cuisine: 'Chinese',
+  grades: 
+   [ { date: 2014-09-16T00:00:00.000Z, grade: 'B', score: 21 },
+     { date: 2013-08-28T00:00:00.000Z, grade: 'A', score: 7 },
+     { date: 2013-04-02T00:00:00.000Z, grade: 'C', score: 56 },
+     { date: 2012-08-15T00:00:00.000Z, grade: 'B', score: 27 },
+     { date: 2012-03-28T00:00:00.000Z, grade: 'B', score: 27 } ],
+  name: 'May May Kitchen',
+  restaurant_id: '40358429' }
+{ _id: ObjectId("6062e26d3a154411fe41eb96"),
+  address: 
+   { building: '1',
+     coord: [ -73.96926909999999, 40.7685235 ],
+     street: 'East   66 Street',
+     zipcode: '10065' },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-05-07T00:00:00.000Z, grade: 'A', score: 3 },
+     { date: 2013-05-03T00:00:00.000Z, grade: 'A', score: 4 },
+     { date: 2012-04-30T00:00:00.000Z, grade: 'A', score: 6 },
+     { date: 2011-12-27T00:00:00.000Z, grade: 'A', score: 0 } ],
+  name: '1 East 66Th Street Kitchen',
+  restaurant_id: '40359480' }
+{ _id: ObjectId("6062e26d3a154411fe41eb97"),
+  address: 
+   { building: '705',
+     coord: [ -73.9653967, 40.6064339 ],
+     street: 'Kings Highway',
+     zipcode: '11223' },
+  borough: 'Brooklyn',
+  cuisine: 'Jewish/Kosher',
+  grades: 
+   [ { date: 2014-11-10T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2013-10-10T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2012-10-04T00:00:00.000Z, grade: 'A', score: 7 },
+     { date: 2012-05-21T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2011-12-30T00:00:00.000Z, grade: 'B', score: 19 } ],
+  name: 'Seuda Foods',
+  restaurant_id: '40360045' }
+{ _id: ObjectId("6062e26d3a154411fe41eb98"),
+  address: 
+   { building: '203',
+     coord: [ -73.97822040000001, 40.6435254 ],
+     street: 'Church Avenue',
+     zipcode: '11218' },
+  borough: 'Brooklyn',
+  cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+  grades: 
+   [ { date: 2014-02-10T00:00:00.000Z, grade: 'A', score: 2 },
+     { date: 2013-01-02T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2012-01-09T00:00:00.000Z, grade: 'A', score: 3 },
+     { date: 2011-11-07T00:00:00.000Z, grade: 'P', score: 12 },
+     { date: 2011-07-21T00:00:00.000Z, grade: 'A', score: 13 } ],
+  name: 'Carvel Ice Cream',
+  restaurant_id: '40360076' }
+{ _id: ObjectId("6062e26d3a154411fe41eb99"),
+  address: 
+   { building: '265-15',
+     coord: [ -73.7032601, 40.7386417 ],
+     street: 'Hillside Avenue',
+     zipcode: '11004' },
+  borough: 'Queens',
+  cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+  grades: 
+   [ { date: 2014-10-28T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2013-09-18T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2012-09-20T00:00:00.000Z, grade: 'A', score: 13 } ],
+  name: 'Carvel Ice Cream',
+  restaurant_id: '40361322' }
+{ _id: ObjectId("6062e26d3a154411fe41eb9a"),
+  address: 
+   { building: '6909',
+     coord: [ -74.0259567, 40.6353674 ],
+     street: '3 Avenue',
+     zipcode: '11209' },
+  borough: 'Brooklyn',
+  cuisine: 'Delicatessen',
+  grades: 
+   [ { date: 2014-08-21T00:00:00.000Z, grade: 'A', score: 4 },
+     { date: 2014-03-05T00:00:00.000Z, grade: 'A', score: 3 },
+     { date: 2013-01-10T00:00:00.000Z, grade: 'A', score: 10 } ],
+  name: 'Nordic Delicacies',
+  restaurant_id: '40361390' }
+{ _id: ObjectId("6062e26d3a154411fe41eb9b"),
+  address: 
+   { building: '522',
+     coord: [ -73.95171, 40.767461 ],
+     street: 'East   74 Street',
+     zipcode: '10021' },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-09-02T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2013-12-19T00:00:00.000Z, grade: 'B', score: 16 },
+     { date: 2013-05-28T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2012-12-07T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2012-03-29T00:00:00.000Z, grade: 'A', score: 11 } ],
+  name: 'Glorious Food',
+  restaurant_id: '40361521' }
+{ _id: ObjectId("6062e26d3a154411fe41eb9c"),
+  address: 
+   { building: '284',
+     coord: [ -73.9829239, 40.6580753 ],
+     street: 'Prospect Park West',
+     zipcode: '11215' },
+  borough: 'Brooklyn',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-11-19T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2013-11-14T00:00:00.000Z, grade: 'A', score: 2 },
+     { date: 2012-12-05T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2012-05-17T00:00:00.000Z, grade: 'A', score: 11 } ],
+  name: 'The Movable Feast',
+  restaurant_id: '40361606' }
+Type "it" for more
+
+#• Find the fields restaurant_id, name, borough and cuisine for all the documents in the collection restaurant.
+> db.restaurants.find({}, {"restaurant_id": 1, "name": 2, "borough": 3, "cuisine": 4});
+
+{ _id: ObjectId("6062e26d3a154411fe41eb89"),
+  borough: 'Bronx',
+  cuisine: 'Bakery',
+  name: 'Morris Park Bake Shop',
+  restaurant_id: '30075445' }
+{ _id: ObjectId("6062e26d3a154411fe41eb8a"),
+  borough: 'Brooklyn',
+  cuisine: 'Hamburgers',
+  name: 'Wendy\'S',
+  restaurant_id: '30112340' }
+{ _id: ObjectId("6062e26d3a154411fe41eb8b"),
+  borough: 'Manhattan',
+  cuisine: 'Irish',
+  name: 'Dj Reynolds Pub And Restaurant',
+  restaurant_id: '30191841' }
+{ _id: ObjectId("6062e26d3a154411fe41eb8c"),
+  borough: 'Brooklyn',
+  cuisine: 'American ',
+  name: 'Riviera Caterer',
+  restaurant_id: '40356018' }
+{ _id: ObjectId("6062e26d3a154411fe41eb8d"),
+  borough: 'Queens',
+  cuisine: 'Jewish/Kosher',
+  name: 'Tov Kosher Kitchen',
+  restaurant_id: '40356068' }
+{ _id: ObjectId("6062e26d3a154411fe41eb8e"),
+  borough: 'Queens',
+  cuisine: 'American ',
+  name: 'Brunos On The Boulevard',
+  restaurant_id: '40356151' }
+{ _id: ObjectId("6062e26d3a154411fe41eb8f"),
+  borough: 'Staten Island',
+  cuisine: 'Jewish/Kosher',
+  name: 'Kosher Island',
+  restaurant_id: '40356442' }
+{ _id: ObjectId("6062e26d3a154411fe41eb90"),
+  borough: 'Brooklyn',
+  cuisine: 'Delicatessen',
+  name: 'Wilken\'S Fine Food',
+  restaurant_id: '40356483' }
+{ _id: ObjectId("6062e26d3a154411fe41eb91"),
+  borough: 'Brooklyn',
+  cuisine: 'American ',
+  name: 'Regina Caterers',
+  restaurant_id: '40356649' }
+{ _id: ObjectId("6062e26d3a154411fe41eb92"),
+  borough: 'Brooklyn',
+  cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+  name: 'Taste The Tropics Ice Cream',
+  restaurant_id: '40356731' }
+{ _id: ObjectId("6062e26d3a154411fe41eb93"),
+  borough: 'Bronx',
+  cuisine: 'American ',
+  name: 'Wild Asia',
+  restaurant_id: '40357217' }
+{ _id: ObjectId("6062e26d3a154411fe41eb94"),
+  borough: 'Brooklyn',
+  cuisine: 'American ',
+  name: 'C & C Catering Service',
+  restaurant_id: '40357437' }
+{ _id: ObjectId("6062e26d3a154411fe41eb95"),
+  borough: 'Brooklyn',
+  cuisine: 'Chinese',
+  name: 'May May Kitchen',
+  restaurant_id: '40358429' }
+{ _id: ObjectId("6062e26d3a154411fe41eb96"),
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: '1 East 66Th Street Kitchen',
+  restaurant_id: '40359480' }
+{ _id: ObjectId("6062e26d3a154411fe41eb97"),
+  borough: 'Brooklyn',
+  cuisine: 'Jewish/Kosher',
+  name: 'Seuda Foods',
+  restaurant_id: '40360045' }
+{ _id: ObjectId("6062e26d3a154411fe41eb98"),
+  borough: 'Brooklyn',
+  cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+  name: 'Carvel Ice Cream',
+  restaurant_id: '40360076' }
+{ _id: ObjectId("6062e26d3a154411fe41eb99"),
+  borough: 'Queens',
+  cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+  name: 'Carvel Ice Cream',
+  restaurant_id: '40361322' }
+{ _id: ObjectId("6062e26d3a154411fe41eb9a"),
+  borough: 'Brooklyn',
+  cuisine: 'Delicatessen',
+  name: 'Nordic Delicacies',
+  restaurant_id: '40361390' }
+{ _id: ObjectId("6062e26d3a154411fe41eb9b"),
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Glorious Food',
+  restaurant_id: '40361521' }
+{ _id: ObjectId("6062e26d3a154411fe41eb9c"),
+  borough: 'Brooklyn',
+  cuisine: 'American ',
+  name: 'The Movable Feast',
+  restaurant_id: '40361606' }
+Type "it" for more
+
+#• Find the first 5 restaurant which is in the borough Bronx.
+> db.restaurants.find({borough: "Bronx"}).limit(5);
+
+{ _id: ObjectId("6062e26d3a154411fe41eb89"),
+  address: 
+   { building: '1007',
+     coord: [ -73.856077, 40.848447 ],
+     street: 'Morris Park Ave',
+     zipcode: '10462' },
+  borough: 'Bronx',
+  cuisine: 'Bakery',
+  grades: 
+   [ { date: 2014-03-03T00:00:00.000Z, grade: 'A', score: 2 },
+     { date: 2013-09-11T00:00:00.000Z, grade: 'A', score: 6 },
+     { date: 2013-01-24T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2011-11-23T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2011-03-10T00:00:00.000Z, grade: 'B', score: 14 } ],
+  name: 'Morris Park Bake Shop',
+  restaurant_id: '30075445' }
+{ _id: ObjectId("6062e26d3a154411fe41eb93"),
+  address: 
+   { building: '2300',
+     coord: [ -73.8786113, 40.8502883 ],
+     street: 'Southern Boulevard',
+     zipcode: '10460' },
+  borough: 'Bronx',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-05-28T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2013-06-19T00:00:00.000Z, grade: 'A', score: 4 },
+     { date: 2012-06-15T00:00:00.000Z, grade: 'A', score: 3 } ],
+  name: 'Wild Asia',
+  restaurant_id: '40357217' }
+{ _id: ObjectId("6062e26d3a154411fe41eba8"),
+  address: 
+   { building: '1006',
+     coord: [ -73.84856870000002, 40.8903781 ],
+     street: 'East 233 Street',
+     zipcode: '10466' },
+  borough: 'Bronx',
+  cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+  grades: 
+   [ { date: 2014-04-24T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2013-09-05T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2013-02-21T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2012-07-03T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2011-07-11T00:00:00.000Z, grade: 'A', score: 5 } ],
+  name: 'Carvel Ice Cream',
+  restaurant_id: '40363093' }
+{ _id: ObjectId("6062e26d3a154411fe41ebac"),
+  address: 
+   { building: '1236',
+     coord: [ -73.8893654, 40.81376179999999 ],
+     street: '238 Spofford Ave',
+     zipcode: '10474' },
+  borough: 'Bronx',
+  cuisine: 'Chinese',
+  grades: 
+   [ { date: 2013-12-30T00:00:00.000Z, grade: 'A', score: 8 },
+     { date: 2013-01-08T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2012-06-12T00:00:00.000Z, grade: 'B', score: 15 } ],
+  name: 'Happy Garden',
+  restaurant_id: '40363289' }
+{ _id: ObjectId("6062e26d3a154411fe41ebbe"),
+  address: 
+   { building: '277',
+     coord: [ -73.8941893, 40.8634684 ],
+     street: 'East Kingsbridge Road',
+     zipcode: '10458' },
+  borough: 'Bronx',
+  cuisine: 'Chinese',
+  grades: 
+   [ { date: 2014-03-03T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2013-09-26T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2013-03-19T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2012-08-29T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2011-08-17T00:00:00.000Z, grade: 'A', score: 13 } ],
+  name: 'Happy Garden',
+  restaurant_id: '40364296' }
+
+#• Find the restaurant Id, name, borough and cuisine for those restaurants which prepared dish except 'American' and 'Chinese' or restaurant's name begins with letter 'Wil’.
+> db.restaurants.find({$or: [{cuisine: {$nin: [/^American ?$/, 'Chinese']}}, {name: /^Wil/}]},
+  {restaurant_id: 1, name: 1, borough: 1, cuisine: 1})
+
+{ _id: ObjectId("6062e26d3a154411fe41eb89"),
+  borough: 'Bronx',
+  cuisine: 'Bakery',
+  name: 'Morris Park Bake Shop',
+  restaurant_id: '30075445' }
+{ _id: ObjectId("6062e26d3a154411fe41eb8a"),
+  borough: 'Brooklyn',
+  cuisine: 'Hamburgers',
+  name: 'Wendy\'S',
+  restaurant_id: '30112340' }
+{ _id: ObjectId("6062e26d3a154411fe41eb8b"),
+  borough: 'Manhattan',
+  cuisine: 'Irish',
+  name: 'Dj Reynolds Pub And Restaurant',
+  restaurant_id: '30191841' }
+{ _id: ObjectId("6062e26d3a154411fe41eb8d"),
+  borough: 'Queens',
+  cuisine: 'Jewish/Kosher',
+  name: 'Tov Kosher Kitchen',
+  restaurant_id: '40356068' }
+{ _id: ObjectId("6062e26d3a154411fe41eb8f"),
+  borough: 'Staten Island',
+  cuisine: 'Jewish/Kosher',
+  name: 'Kosher Island',
+  restaurant_id: '40356442' }
+{ _id: ObjectId("6062e26d3a154411fe41eb90"),
+  borough: 'Brooklyn',
+  cuisine: 'Delicatessen',
+  name: 'Wilken\'S Fine Food',
+  restaurant_id: '40356483' }
+{ _id: ObjectId("6062e26d3a154411fe41eb92"),
+  borough: 'Brooklyn',
+  cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+  name: 'Taste The Tropics Ice Cream',
+  restaurant_id: '40356731' }
+{ _id: ObjectId("6062e26d3a154411fe41eb93"),
+  borough: 'Bronx',
+  cuisine: 'American ',
+  name: 'Wild Asia',
+  restaurant_id: '40357217' }
+{ _id: ObjectId("6062e26d3a154411fe41eb97"),
+  borough: 'Brooklyn',
+  cuisine: 'Jewish/Kosher',
+  name: 'Seuda Foods',
+  restaurant_id: '40360045' }
+{ _id: ObjectId("6062e26d3a154411fe41eb98"),
+  borough: 'Brooklyn',
+  cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+  name: 'Carvel Ice Cream',
+  restaurant_id: '40360076' }
+{ _id: ObjectId("6062e26d3a154411fe41eb99"),
+  borough: 'Queens',
+  cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+  name: 'Carvel Ice Cream',
+  restaurant_id: '40361322' }
+{ _id: ObjectId("6062e26d3a154411fe41eb9a"),
+  borough: 'Brooklyn',
+  cuisine: 'Delicatessen',
+  name: 'Nordic Delicacies',
+  restaurant_id: '40361390' }
+{ _id: ObjectId("6062e26d3a154411fe41eb9d"),
+  borough: 'Queens',
+  cuisine: 'Delicatessen',
+  name: 'Sal\'S Deli',
+  restaurant_id: '40361618' }
+{ _id: ObjectId("6062e26d3a154411fe41eb9e"),
+  borough: 'Manhattan',
+  cuisine: 'Delicatessen',
+  name: 'Bully\'S Deli',
+  restaurant_id: '40361708' }
+{ _id: ObjectId("6062e26d3a154411fe41eb9f"),
+  borough: 'Queens',
+  cuisine: 'Delicatessen',
+  name: 'Steve Chu\'S Deli & Grocery',
+  restaurant_id: '40361998' }
+{ _id: ObjectId("6062e26d3a154411fe41eba0"),
+  borough: 'Manhattan',
+  cuisine: 'Chicken',
+  name: 'Harriet\'S Kitchen',
+  restaurant_id: '40362098' }
+{ _id: ObjectId("6062e26d3a154411fe41eba3"),
+  borough: 'Brooklyn',
+  cuisine: 'Hamburgers',
+  name: 'White Castle',
+  restaurant_id: '40362344' }
+{ _id: ObjectId("6062e26d3a154411fe41eba5"),
+  borough: 'Manhattan',
+  cuisine: 'Turkish',
+  name: 'The Country Cafe',
+  restaurant_id: '40362715' }
+{ _id: ObjectId("6062e26d3a154411fe41eba6"),
+  borough: 'Brooklyn',
+  cuisine: 'Caribbean',
+  name: 'Shashemene Int\'L Restaura',
+  restaurant_id: '40362869' }
+{ _id: ObjectId("6062e26d3a154411fe41eba8"),
+  borough: 'Bronx',
+  cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+  name: 'Carvel Ice Cream',
+  restaurant_id: '40363093' }
+Type "it" for more
+
+#• Find the restaurant name, borough, longitude and attitude and cuisine for those restaurants which contains 'mon' as three letters somewhere in its name.
+> db.restaurants.find({name: /mon/i}, /*case Insensitive*/
+  {name: 1, borough: 1, address: {coord: 1}, cuisine: 1})
+
+{ _id: ObjectId("6062e26d3a154411fe41ec1d"),
+  address: { coord: [ -73.98306099999999, 40.7441419 ] },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Desmond\'S Tavern' }
+{ _id: ObjectId("6062e26d3a154411fe41ec26"),
+  address: { coord: [ -73.8221418, 40.7272376 ] },
+  borough: 'Queens',
+  cuisine: 'Jewish/Kosher',
+  name: 'Shimons Kosher Pizza' }
+{ _id: ObjectId("6062e26d3a154411fe41ec32"),
+  address: { coord: [ -74.10465599999999, 40.58834 ] },
+  borough: 'Staten Island',
+  cuisine: 'American ',
+  name: 'Richmond County Country Club' }
+{ _id: ObjectId("6062e26e3a154411fe41ec5d"),
+  address: { coord: [ -73.9812843, 40.5947365 ] },
+  borough: 'Brooklyn',
+  cuisine: 'Pizza/Italian',
+  name: 'Lb Spumoni Gardens' }
+{ _id: ObjectId("6062e26e3a154411fe41ecaf"),
+  address: { coord: [ -73.951199, 40.7166026 ] },
+  borough: 'Brooklyn',
+  cuisine: 'Italian',
+  name: 'Bamonte\'S Restaurant' }
+{ _id: ObjectId("6062e26e3a154411fe41ece6"),
+  address: { coord: [ -73.924072, 40.76108900000001 ] },
+  borough: 'Queens',
+  cuisine: 'Greek',
+  name: 'Omonia Cafe' }
+{ _id: ObjectId("6062e26e3a154411fe41ed36"),
+  address: { coord: [ -74.0023353, 40.7333573 ] },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Manhattan Monster' }
+{ _id: ObjectId("6062e26e3a154411fe41ed63"),
+  address: { coord: [ -74.001094, 40.729583 ] },
+  borough: 'Manhattan',
+  cuisine: 'Italian',
+  name: 'Monte\'S' }
+{ _id: ObjectId("6062e26e3a154411fe41ed69"),
+  address: { coord: [ -73.9901605, 40.7526176 ] },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Delmonico\'S Kitchen' }
+{ _id: ObjectId("6062e26e3a154411fe41ed7f"),
+  address: { coord: [ -73.9979536, 40.6914024 ] },
+  borough: 'Brooklyn',
+  cuisine: 'Bottled beverages, including water, sodas, juices, etc.',
+  name: 'Montero Bar & Grill' }
+{ _id: ObjectId("6062e26e3a154411fe41ef0a"),
+  address: { coord: [ -73.9707505, 40.7635651 ] },
+  borough: 'Manhattan',
+  cuisine: 'Delicatessen',
+  name: 'Delmonico Gourmet' }
+{ _id: ObjectId("6062e26f3a154411fe41ef77"),
+  address: { coord: [ -73.9760637, 40.7508686 ] },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Delmonico Gourmet' }
+{ _id: ObjectId("6062e26f3a154411fe41ef8b"),
+  address: { coord: [ -73.9705633, 40.7605759 ] },
+  borough: 'Manhattan',
+  cuisine: 'Italian',
+  name: 'Montebello Restaurant' }
+{ _id: ObjectId("6062e26f3a154411fe41f023"),
+  address: { coord: [ -74.1914658, 40.55274360000001 ] },
+  borough: 'Staten Island',
+  cuisine: 'Italian',
+  name: 'Villa Monte Pizzeria' }
+{ _id: ObjectId("6062e26f3a154411fe41f0ce"),
+  address: { coord: [ -73.97198209999999, 40.764464 ] },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Harmonie Club' }
+{ _id: ObjectId("6062e26f3a154411fe41f192"),
+  address: { coord: [ -73.79571990000001, 40.7095637 ] },
+  borough: 'Queens',
+  cuisine: 'Bakery',
+  name: 'Ramona\'S Bakery' }
+{ _id: ObjectId("6062e26f3a154411fe41f1c6"),
+  address: { coord: [ -73.97852100000001, 40.729192 ] },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Mona\'S' }
+{ _id: ObjectId("6062e26f3a154411fe41f1eb"),
+  address: { coord: [ -73.98463480000001, 40.7630755 ] },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Neil Simon Theatre' }
+{ _id: ObjectId("6062e26f3a154411fe41f226"),
+  address: { coord: [ -73.9938361, 40.6091317 ] },
+  borough: 'Brooklyn',
+  cuisine: 'Bakery',
+  name: 'Mondial Bakery' }
+{ _id: ObjectId("6062e26f3a154411fe41f24d"),
+  address: { coord: [ -74.028486, 40.630438 ] },
+  borough: 'Brooklyn',
+  cuisine: 'Mediterranean',
+  name: 'Omonia Cafe' }
+Type "it" for more
+
+#• Find the restaurant Id, name, borough and cuisine for those restaurants which belong to the borough Staten Island or Queens or Bronx or Brooklyn.
+> db.restaurants.find({borough: {$in: ["Staten Island", "Queens", "Bronx", "Brooklyn"]}},
+  {restaurant_id: 1, name: 1, borough: 1, cuisine: 1})
+
+{ _id: ObjectId("6062e26d3a154411fe41eb89"),
+  borough: 'Bronx',
+  cuisine: 'Bakery',
+  name: 'Morris Park Bake Shop',
+  restaurant_id: '30075445' }
+{ _id: ObjectId("6062e26d3a154411fe41eb8a"),
+  borough: 'Brooklyn',
+  cuisine: 'Hamburgers',
+  name: 'Wendy\'S',
+  restaurant_id: '30112340' }
+{ _id: ObjectId("6062e26d3a154411fe41eb8c"),
+  borough: 'Brooklyn',
+  cuisine: 'American ',
+  name: 'Riviera Caterer',
+  restaurant_id: '40356018' }
+{ _id: ObjectId("6062e26d3a154411fe41eb8d"),
+  borough: 'Queens',
+  cuisine: 'Jewish/Kosher',
+  name: 'Tov Kosher Kitchen',
+  restaurant_id: '40356068' }
+{ _id: ObjectId("6062e26d3a154411fe41eb8e"),
+  borough: 'Queens',
+  cuisine: 'American ',
+  name: 'Brunos On The Boulevard',
+  restaurant_id: '40356151' }
+{ _id: ObjectId("6062e26d3a154411fe41eb8f"),
+  borough: 'Staten Island',
+  cuisine: 'Jewish/Kosher',
+  name: 'Kosher Island',
+  restaurant_id: '40356442' }
+{ _id: ObjectId("6062e26d3a154411fe41eb90"),
+  borough: 'Brooklyn',
+  cuisine: 'Delicatessen',
+  name: 'Wilken\'S Fine Food',
+  restaurant_id: '40356483' }
+{ _id: ObjectId("6062e26d3a154411fe41eb91"),
+  borough: 'Brooklyn',
+  cuisine: 'American ',
+  name: 'Regina Caterers',
+  restaurant_id: '40356649' }
+{ _id: ObjectId("6062e26d3a154411fe41eb92"),
+  borough: 'Brooklyn',
+  cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+  name: 'Taste The Tropics Ice Cream',
+  restaurant_id: '40356731' }
+{ _id: ObjectId("6062e26d3a154411fe41eb93"),
+  borough: 'Bronx',
+  cuisine: 'American ',
+  name: 'Wild Asia',
+  restaurant_id: '40357217' }
+{ _id: ObjectId("6062e26d3a154411fe41eb94"),
+  borough: 'Brooklyn',
+  cuisine: 'American ',
+  name: 'C & C Catering Service',
+  restaurant_id: '40357437' }
+{ _id: ObjectId("6062e26d3a154411fe41eb95"),
+  borough: 'Brooklyn',
+  cuisine: 'Chinese',
+  name: 'May May Kitchen',
+  restaurant_id: '40358429' }
+{ _id: ObjectId("6062e26d3a154411fe41eb97"),
+  borough: 'Brooklyn',
+  cuisine: 'Jewish/Kosher',
+  name: 'Seuda Foods',
+  restaurant_id: '40360045' }
+{ _id: ObjectId("6062e26d3a154411fe41eb98"),
+  borough: 'Brooklyn',
+  cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+  name: 'Carvel Ice Cream',
+  restaurant_id: '40360076' }
+{ _id: ObjectId("6062e26d3a154411fe41eb99"),
+  borough: 'Queens',
+  cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+  name: 'Carvel Ice Cream',
+  restaurant_id: '40361322' }
+{ _id: ObjectId("6062e26d3a154411fe41eb9a"),
+  borough: 'Brooklyn',
+  cuisine: 'Delicatessen',
+  name: 'Nordic Delicacies',
+  restaurant_id: '40361390' }
+{ _id: ObjectId("6062e26d3a154411fe41eb9c"),
+  borough: 'Brooklyn',
+  cuisine: 'American ',
+  name: 'The Movable Feast',
+  restaurant_id: '40361606' }
+{ _id: ObjectId("6062e26d3a154411fe41eb9d"),
+  borough: 'Queens',
+  cuisine: 'Delicatessen',
+  name: 'Sal\'S Deli',
+  restaurant_id: '40361618' }
+{ _id: ObjectId("6062e26d3a154411fe41eb9f"),
+  borough: 'Queens',
+  cuisine: 'Delicatessen',
+  name: 'Steve Chu\'S Deli & Grocery',
+  restaurant_id: '40361998' }
+{ _id: ObjectId("6062e26d3a154411fe41eba3"),
+  borough: 'Brooklyn',
+  cuisine: 'Hamburgers',
+  name: 'White Castle',
+  restaurant_id: '40362344' }
+Type "it" for more
