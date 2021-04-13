@@ -1,0 +1,27 @@
+create (a:fighter {name:"Brandon Vera", weight: "205"}),
+(b:fighter {name:"Brock Lesnar", weight: "230"}),
+(c:fighter {name:"Daniel Cormier", weight: "205"}),
+(d:fighter {name:"Frank Mir", weight: "230"}),
+(e:fighter {name:"Jon Jones", weight: "205"}),
+(f:fighter {name:"Kelvin Gastelum", weight: "185"}),
+(g:fighter {name:"Khabib Nurmagomedov", weight: "155"}),
+(h:fighter {name:"Matt Hamill", weight: "185"}),
+(i:fighter {name:"Michael Bisping", weight: "185"}),
+(j:fighter {name:"Neil Magny", weight: "170"}),
+(k:fighter {name:"Rafael Dos Anjos", weight: "155"}),
+
+(h)-[:beats]->(k),
+(k)-[:beats]->(j),
+(f)-[:beats]->(c),
+(i)-[:beats]->(h),
+(f)-[:beats]->(a),
+(a)-[:beats]->(d),
+(d)-[:beats]->(b),
+(j)-[:beats]->(g),
+(g)-[:beats]->(i),
+(i)-[:beats]->(h),
+(i)-[:beats]->(g),
+(h)-[:beats]->(e);
+
+match (a:fighter)-[:beats]->(b:fighter) return a;
+
